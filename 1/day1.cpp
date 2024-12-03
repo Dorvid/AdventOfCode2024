@@ -26,11 +26,6 @@ int main() {
     std::sort(List_1.begin(), List_1.end());
     std::sort(List_2.begin(), List_2.end());
 
-    unsigned Sum = 0;
-    for(unsigned I = 0; I < List_1.size(); ++I) {
-        Sum += std::abs(List_1[I] - List_2[I]);
-    }
-
     std::cout << "Part_1: " << Part_1(List_1, List_2);
     std::cout << "Part_2: " << Part_2(List_1, List_2);
     return 0;
